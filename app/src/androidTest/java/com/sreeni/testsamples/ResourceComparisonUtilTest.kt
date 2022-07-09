@@ -28,6 +28,7 @@ class ResourceComparisonUtilTest {
         assertThat(result).isTrue()
     }
 
+    @Test
     fun `GivenStringIfNotEqualsReturnsFalse`() {
         val result =
             resourceComparisonUtil.compareStringWithResource(context, R.string.app_name, "Android")
